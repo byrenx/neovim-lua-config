@@ -156,8 +156,7 @@ return require('packer').startup(function(use)
   -- note taking with zettelkasten
 
   -- Themes
-  use 'folke/tokyonight.nvim'
-  use 'marko-cerovac/material.nvim'
+  use 'ellisonleao/gruvbox.nvim'
 
   -- useless plugin
   use 'eandrju/cellular-automaton.nvim'
