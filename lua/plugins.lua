@@ -27,7 +27,11 @@ return require('packer').startup(function(use)
   use({'wbthomason/packer.nvim', opt = true})
 
   -- LSP management (must come first as per mason-lspconfig.nvim's instructions)
-  use "williamboman/mason.nvim"
+  use {
+    "williamboman/mason.nvim",
+    run = ":MasonUpdate", -- :MasonUpdate updates registry contents
+    config = function() require('plugins.mason') end,
+  }
   use ({
     "williamboman/mason-lspconfig.nvim",
     config = function() require('plugins.mason-lspconfig') end,

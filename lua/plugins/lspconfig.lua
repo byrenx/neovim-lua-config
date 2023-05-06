@@ -8,12 +8,13 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable language servers with common settings
 local servers = {
-  "bashls",
-  "clangd",
-  "dockerls",
-  "jsonls",
-  "pyright",
-  "texlab",
+   "bashls",
+   "clangd",
+   "dockerls",
+   "jsonls",
+   "pyright",
+   "texlab",
+   "tsserver"
 }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup({
@@ -26,4 +27,3 @@ end
 
 -- signature help hover
 require "lsp_signature".setup({ })
-
