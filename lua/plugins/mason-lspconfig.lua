@@ -4,10 +4,7 @@ require("mason-lspconfig").setup {
        "clangd",
        "jsonls",
        "julials",
-       "markdown",
-       "markdown_inline",
        "pyright",
-       "sumneko_lua",
        "texlab",
        "tsserver"
     },
