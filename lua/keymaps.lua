@@ -109,8 +109,8 @@ nnoremap("<leader>I", "<Cmd>lua vim.diagnostic.setloclist()<CR>")
 nnoremap("<leader><A-I>", "<Cmd>lua vim.diagnostic.setqflist()<CR>")
 
 -- Telescope
-nnoremap("<leader>o", "<Cmd>Telescope find_files<CR>")
-nnoremap("<leader>H", "<Cmd>Telescope find_files hidden=true<CR>")
+nnoremap("<leader>f", "<Cmd>Telescope find_files<CR>")
+nnoremap("<leader>fh", "<Cmd>Telescope find_files hidden=true<CR>")
 nnoremap("<leader>b", "<Cmd>Telescope buffers<CR>")
 nnoremap("<leader>lg", "<Cmd>Telescope live_grep<CR>")
 
