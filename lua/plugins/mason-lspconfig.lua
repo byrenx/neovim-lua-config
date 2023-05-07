@@ -5,6 +5,7 @@ require("mason-lspconfig").setup {
        "jsonls",
        "julials",
        "pyright",
+       "lua_ls",
        "texlab",
        "tsserver"
     },

@@ -58,6 +58,9 @@ return require('packer').startup(function(use)
     config = function() require('plugins.cmp') end,
   })
 
+  -- coc
+  use {'neoclide/coc.nvim', branch = 'release'}
+
   -- Treesitter
   use({
     'nvim-treesitter/nvim-treesitter',
