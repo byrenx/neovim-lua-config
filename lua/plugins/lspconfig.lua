@@ -12,6 +12,7 @@ local servers = {
    "clangd",
    "dockerls",
    "jsonls",
+   "lua_ls",
    "pyright",
    "texlab",
    "tsserver"
@@ -23,7 +24,7 @@ for _, lsp in ipairs(servers) do
   })
 end
 
-require('lsp.sumneko')
+require "lsp.sumneko"
 
 -- signature help hover
 require "lsp_signature".setup({ })

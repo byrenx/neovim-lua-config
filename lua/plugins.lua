@@ -42,7 +42,15 @@ return require('packer').startup(function(use)
     'neovim/nvim-lspconfig',
     config = function() require('plugins.lspconfig') end
   })
-
+  -- prettier
+  use({
+    'jose-elias-alvarez/null-ls.nvim',
+    config = function() require('plugins.null-ls') end,
+  })
+  use({
+    'MunifTanjim/prettier.nvim',
+    config = function() require('plugins.prettier') end,
+  })
     -- Autocomplete
   use({
     "hrsh7th/nvim-cmp",
@@ -104,6 +112,7 @@ return require('packer').startup(function(use)
     requires = 'kyazdani42/nvim-web-devicons',
     config = function() require('plugins.nvimtree') end,  -- Must add this manually
   })
+
 
   -- Startify
   use({
