@@ -114,6 +114,12 @@ nnoremap("<leader>fh", "<Cmd>Telescope find_files hidden=true<CR>")
 nnoremap("<leader>b", "<Cmd>Telescope buffers<CR>")
 nnoremap("<leader>lg", "<Cmd>Telescope live_grep<CR>")
 
+-- coc
+nnoremap("gd", "<Plug>(coc-definition)", {silent = true})
+nnoremap("gy", "<Plug>(coc-type-definition)", {silent = true})
+nnoremap("gi", "<Plug>(coc-implementation)", {silent = true})
+nnoremap("gr", "<Plug>(coc-references)", {silent = true})
+
 -- File explorer
 nnoremap("<leader>e", "<Cmd>NvimTreeToggle<CR>")  -- NvimTree
 -- nnoremap("<leader>e", "<Cmd>RnvimrToggle<CR>")
